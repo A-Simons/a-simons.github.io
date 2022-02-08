@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How CFRMIS Queries Work &mdash; CFRMIS User Guide</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/version_switch.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+    <link rel="canonical" href="index.html/queries/howQ.html" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/js/version_switch.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="alternate" hreflang="en" href="https://docs.blender.org/manual/en/latest/" />
+    <link rel="alternate" hreflang="ar" href="https://docs.blender.org/manual/ar/latest/" />
+    <link rel="alternate" hreflang="de" href="https://docs.blender.org/manual/de/latest/" />
+    <link rel="alternate" hreflang="es" href="https://docs.blender.org/manual/es/latest/" />
+    <link rel="alternate" hreflang="fi" href="https://docs.blender.org/manual/fi/latest/" />
+    <link rel="alternate" hreflang="fr" href="https://docs.blender.org/manual/fr/latest/" />
+    <link rel="alternate" hreflang="id" href="https://docs.blender.org/manual/id/latest/" />
+    <link rel="alternate" hreflang="it" href="https://docs.blender.org/manual/it/latest/" />
+    <link rel="alternate" hreflang="ja" href="https://docs.blender.org/manual/ja/latest/" />
+    <link rel="alternate" hreflang="ko" href="https://docs.blender.org/manual/ko/latest/" />
+    <link rel="alternate" hreflang="nb" href="https://docs.blender.org/manual/nb/latest/" />
+    <link rel="alternate" hreflang="pt" href="https://docs.blender.org/manual/pt/latest/" />
+    <link rel="alternate" hreflang="ru" href="https://docs.blender.org/manual/ru/latest/" />
+    <link rel="alternate" hreflang="sk" href="https://docs.blender.org/manual/sk/latest/" />
+    <link rel="alternate" hreflang="sl" href="https://docs.blender.org/manual/sl/latest/" />
+    <link rel="alternate" hreflang="sr" href="https://docs.blender.org/manual/sr/latest/" />
+    <link rel="alternate" hreflang="uk" href="https://docs.blender.org/manual/uk/latest/" />
+    <link rel="alternate" hreflang="vi" href="https://docs.blender.org/manual/vi/latest/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://docs.blender.org/manual/zh-hans/latest/" />
+    <link rel="alternate" hreflang="zh-Hant" href="https://docs.blender.org/manual/zh-hant/latest/" />
+    <link rel="alternate" hreflang="x-default" href="https://docs.blender.org/manual/en/latest/" />
+	  <script type="text/javascript">
+    <!-- Adds target=_blank to external links -->
+
+    $(document).ready(function () {
+      $('a[href^="http://"], a[href^="https://"]').not('a[class*=internal]').attr('target', '_blank');
+    });
+  </script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="General Search" href="gen-search.html" />
+    <link rel="prev" title="Queries" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> CFRMIS User Guide
+            <img src="../_static/logo-small.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/index.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../user-interface/index.html">User Interface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Queries</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">How CFRMIS Queries Work</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#operators">Operators</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gen-search.html">General Search</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../records/index.html">Records</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting/index.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../appendices/index.html">Appendices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/index.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">CFRMIS User Guide</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="index.html">Queries</a> &raquo;</li>
+      <li>How CFRMIS Queries Work</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="how-cfrmis-queries-work">
+<h1>How CFRMIS Queries Work<a class="headerlink" href="#how-cfrmis-queries-work" title="Permalink to this headline"></a></h1>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>Explanation of how searches work, wildcards, etc.</p>
+</div>
+<section id="operators">
+<h2>Operators<a class="headerlink" href="#operators" title="Permalink to this headline"></a></h2>
+<p>CFRMIS offers two types of search function to give you access to the database. One is a :doc:<a href="#id2"><span class="problematic" id="id3">`</span></a>gen-search¬ function similar to what you may be used to from other applications. The other, Queries, is a more specific interrogation of the database entries.</p>
+<p>To effectively search the CFRMIS database you will need to use search operators. These expand or limit the scope of a search to ensure that you find the correct record(s).</p>
+<p>To illustrate, imagine that we were trying to find the Premises record for Adam’s Fancy House of Cheeses. We might try typing the below into the Occupier field of a premises query:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">House</span> <span class="n">of</span> <span class="n">Cheese</span>
+</pre></div>
+</div>
+<p>But this wouldn’t give us the result that we wanted. This will only find premises where the Occupier value is exactly “House of Cheese”.
+.. note:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="n">isn</span><span class="s1">&#39;t strictly true. CFRMIS queries don&#39;</span><span class="n">t</span> <span class="n">take</span> <span class="n">into</span> <span class="n">account</span> <span class="n">capitalisation</span><span class="p">,</span> <span class="n">so</span> <span class="n">this</span> <span class="n">search</span> <span class="n">term</span> <span class="n">could</span> <span class="n">also</span> <span class="k">return</span> <span class="s2">&quot;house of cheese&quot;</span><span class="p">,</span> <span class="ow">or</span> <span class="s2">&quot;hOuSe OF cHeESe&quot;</span> <span class="k">for</span> <span class="n">that</span> <span class="n">matter</span><span class="o">.</span>
+</pre></div>
+</div>
+<p>If we want to expand our search term to find Premises with an Occupier containing House of Cheese we would instead type the following:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">House</span> <span class="n">of</span> <span class="n">Cheese</span><span class="o">%</span>
+</pre></div>
+</div>
+<p>This would return Adam’s Fancy House of Cheeses, as well as Karen’s Discount House of Cheese and Biscuits and any of the many other places with House of Cheese in their name.</p>
+<p>Due to the inconsistencies in the way information has historically been entered onto CFRMIS it is essential that you use the search operators to find the correct Premises records and ensure that we are collating data that belong together.</p>
+<table class="colwidths-given docutils align-default" id="id4">
+<caption><span class="caption-text">CFRMIS Search Operators</span><a class="headerlink" href="#id4" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 80%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Operator</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>%/*</p></td>
+<td><p>This is a “wildcard”. These operators both do the same thing and can be used interchangeably. They are used to represents an arbitrary number of characters, even zero characters.</p></td>
+</tr>
+<tr class="row-odd"><td><p>_</p></td>
+<td><p>The underscore is similar to the above wildcard operators but only represents a single character. Mutliple underscores can be used together if you have a defined number of arbitrary characters in mind.</p></td>
+</tr>
+<tr class="row-even"><td><p>![term]</p></td>
+<td><p>The exclamation mark means “not”, so ![term] means “not [term”. This means that the search will return everything <em>except</em> [term].</p></td>
+</tr>
+<tr class="row-odd"><td><p>&amp;</p></td>
+<td><p>The ampersand is a “null” operator. This means that the search will return all records where this field is empty.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="examples">
+<h2>Examples<a class="headerlink" href="#examples" title="Permalink to this headline"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span><span class="o">%</span>
+</pre></div>
+</div>
+<p>will return any records where this value starts with “a”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">*</span><span class="n">b</span>
+</pre></div>
+</div>
+<p>will return any records where this value ends with “b”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">cd</span><span class="o">%</span>
+</pre></div>
+</div>
+<p>will return any records where this value contains “cd” anywhere.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">_e</span><span class="o">*</span>
+</pre></div>
+</div>
+<p>will return any records where this value has an “e” as the second character.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">f__</span><span class="o">%</span>
+</pre></div>
+</div>
+<p>will return any records where this value starts with “f” and is at least three characters long.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">*</span><span class="n">h</span>
+</pre></div>
+</div>
+<p>will return any records where this value begins with “g” and ends with “h”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>!i
+</pre></div>
+</div>
+<p>will return any records where this value is <em>not</em> “i”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&amp;</span>
+</pre></div>
+</div>
+<p>will return any records where this value is empty.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Queries" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="gen-search.html" class="btn btn-neutral float-right" title="General Search" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p></p>
+  </div>
+
+  
+      <div class="footer-contribute">
+      </div>
+
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="document versions">
+
+</div><script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
