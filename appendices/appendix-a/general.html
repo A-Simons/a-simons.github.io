@@ -86,7 +86,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="hmos.html">HMOs</a></li>
-<li class="toctree-l3"><a class="reference internal" href="retail-parks.html">Retail Parks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="retail-parks.html">Retail, Industrial and Business Parks</a></li>
 <li class="toctree-l3"><a class="reference internal" href="shopping-centres.html">Shopping Centres</a></li>
 <li class="toctree-l3"><a class="reference internal" href="hospitals.html">HMOs</a></li>
 </ul>
@@ -286,10 +286,10 @@
 </section>
 <section id="tel-no">
 <h3>Tel. No.:<a class="headerlink" href="#tel-no" title="Permalink to this headline"></a></h3>
-<p>Contact telephone number for the premises. There is plenty of room in this field so feel free to enter multiple phone numbers if you have them. Make sure that if you are entering multiple phone numbers in this field you make clear what they are.
-.. note:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Landline</span><span class="p">:</span> <span class="mi">01604</span> <span class="mi">7970000</span><span class="p">,</span> <span class="n">Mobile</span><span class="p">:</span> <span class="mi">07000</span> <span class="mi">000000</span><span class="p">,</span> <span class="n">OOH</span> <span class="n">Keyholder</span><span class="p">:</span> <span class="mi">07000</span> <span class="mi">111111</span>
-</pre></div>
+<p>Contact telephone number for the premises. There is plenty of room in this field so feel free to enter multiple phone numbers if you have them. Make sure that if you are entering multiple phone numbers in this field you make clear what they are.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Landline: 01604 7970000, Mobile: 07000 000000, OOH Keyholder: 07000 111111</p>
 </div>
 </section>
 <section id="e-mail">
@@ -309,10 +309,10 @@
 </section>
 <section id="station">
 <h3>Station<a class="headerlink" href="#station" title="Permalink to this headline"></a></h3>
-<p>Although this field provides the option of every NFRS station this should only be used to select the <em>nearest wholetime</em> fire station. The wholetime fire stations are
-.. todo:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Not</span> <span class="n">particularly</span> <span class="n">happy</span> <span class="k">with</span> <span class="n">this</span> <span class="o">-</span> <span class="ow">is</span> <span class="n">there</span> <span class="n">guidance</span> <span class="k">for</span> <span class="n">which</span> <span class="n">station</span><span class="s1">&#39;s fireground various locations come under?</span>
-</pre></div>
+<p>Although this field provides the option of every NFRS station this should only be used to select the <em>nearest wholetime</em> fire station. The wholetime fire stations are.</p>
+<div class="admonition-todo admonition" id="id7">
+<p class="admonition-title">Todo</p>
+<p>Not particularly happy with this - is there guidance for which stations fireground various locations come under?</p>
 </div>
 </section>
 <section id="gazetteer-id">
@@ -325,26 +325,49 @@
 </section>
 <section id="dwelling-type">
 <h3>Dwelling Type<a class="headerlink" href="#dwelling-type" title="Permalink to this headline"></a></h3>
-<p>This field is primarily used with <a class="reference internal" href="../../glossary/index.html#term-Domestic-Premises"><span class="xref std std-term">Domestic Premises</span></a> rather than <a class="reference internal" href="../../glossary/index.html#term-Other-Buildings"><span class="xref std std-term">Other Buildings</span></a>, however it may be appropriate to use this where it is necessary to record Fire Protection activity that takes place within a Domestic Premises.
-.. note:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>Remember that a HMO is not a dwelling, it is a collection of dwellings (i.e. the bedrooms) and that a HMO premises in Other Buildings is the common the parts of the premises which are subject to the :term:`Fire Safety Order`.
-</pre></div>
+<p>This field is primarily used with <a class="reference internal" href="../../glossary/index.html#term-Domestic-Premises"><span class="xref std std-term">Domestic Premises</span></a> rather than <a class="reference internal" href="../../glossary/index.html#term-Other-Buildings"><span class="xref std std-term">Other Buildings</span></a>, however it may be appropriate to use this where it is necessary to record Fire Protection activity that takes place within a Domestic Premises.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Remember that a HMO is not a dwelling, it is a collection of dwellings (i.e. the bedrooms) and that a HMO premises in Other Buildings is the common the parts of the premises which are subject to the <a class="reference internal" href="../../glossary/index.html#term-Fire-Safety-Order"><span class="xref std std-term">Fire Safety Order</span></a>.</p>
 </div>
 </section>
 <section id="risk-level">
 <h3>Risk Level<a class="headerlink" href="#risk-level" title="Permalink to this headline"></a></h3>
-<p>This field contains the risk level recorded on the most recent TFS job against the premises. When creating a Premises record this will default to Medium.</p>
+<p>This field contains the risk level recorded on the most recent TFS job against the premises. When creating a Premises record this will typically be set to Medium.</p>
 </section>
 <section id="compliance-level">
 <h3>Compliance Level<a class="headerlink" href="#compliance-level" title="Permalink to this headline"></a></h3>
-<p>This field contains the compliance level recorded on the most recent TFS job against the premises. When creating a Premises record this will default to Average.</p>
+<p>This field contains the compliance level recorded on the most recent TFS job against the premises. When creating a Premises record this will typically be set to Average.</p>
 </section>
 <section id="inspection-frequency">
 <h3>Inspection Frequency<a class="headerlink" href="#inspection-frequency" title="Permalink to this headline"></a></h3>
+<p>This field is automatically populated by CFRMIS based on the premises type (supplentary line number), risk level and complaince level. You do not need to enter anything into this field when creating a new premises.</p>
+</section>
+<section id="officer-grade">
+<h3>Officer Grade<a class="headerlink" href="#officer-grade" title="Permalink to this headline"></a></h3>
+<div class="admonition-todo admonition" id="id8">
+<p class="admonition-title">Todo</p>
+<p>Figure out what this is.</p>
+</div>
 </section>
 <section id="no-of-persons">
 <h3>No. of Persons<a class="headerlink" href="#no-of-persons" title="Permalink to this headline"></a></h3>
-<p>This is used to record the maximum occupancy of the premises. Although you may record this for any premises type (where you know the correct figure, no guesses! See <span class="xref std std-doc">../../records/integrity</span>) it is particularly important for certain premises types, and is discussed further in the appropriate sections of the <a class="reference internal" href="index.html"><span class="doc">Appendix A - Protection Guidance Notes</span></a>.</p>
+<p>This is used to record the maximum occupancy of the premises. Although you may record this for any premises type (where you know the correct figure, no guesses! See <span class="xref std std-doc">../../records/integrity</span>) it is particularly important for certain premises types, and is discussed further in the appropriate sections of <a class="reference internal" href="index.html"><span class="doc">Appendix A - Protection Guidance Notes</span></a>.</p>
+</section>
+<section id="multiple-occupancy">
+<h3>Multiple Occupancy?<a class="headerlink" href="#multiple-occupancy" title="Permalink to this headline"></a></h3>
+<p>Is this premises one of multiple premises occupying a building? The value entered in this field must be “Y” for Yes or “N” for No.</p>
+</section>
+<section id="other-legislation">
+<h3>Other Legislation?<a class="headerlink" href="#other-legislation" title="Permalink to this headline"></a></h3>
+<p>Is there other legislation regulating fire safety in this premises? The value entered in this field must be “Y” for Yes or “N” for No.</p>
+</section>
+<section id="emergency-lighting">
+<h3>Emergency Lighting<a class="headerlink" href="#emergency-lighting" title="Permalink to this headline"></a></h3>
+<div class="admonition-todo admonition" id="id9">
+<p class="admonition-title">Todo</p>
+<p>???</p>
+</div>
 </section>
 </section>
 </section>
