@@ -130,10 +130,10 @@
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">House</span> <span class="n">of</span> <span class="n">Cheese</span>
 </pre></div>
 </div>
-<p>But this wouldn’t give us the result that we wanted. This will only find premises where the Occupier value is exactly “House of Cheese”.
-.. note:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">This</span> <span class="n">isn</span><span class="s1">&#39;t strictly true. CFRMIS queries don&#39;</span><span class="n">t</span> <span class="n">take</span> <span class="n">into</span> <span class="n">account</span> <span class="n">capitalisation</span><span class="p">,</span> <span class="n">so</span> <span class="n">this</span> <span class="n">search</span> <span class="n">term</span> <span class="n">could</span> <span class="n">also</span> <span class="k">return</span> <span class="s2">&quot;house of cheese&quot;</span><span class="p">,</span> <span class="ow">or</span> <span class="s2">&quot;hOuSe OF cHeESe&quot;</span> <span class="k">for</span> <span class="n">that</span> <span class="n">matter</span><span class="o">.</span>
-</pre></div>
+<p>But this wouldn’t give us the result that we wanted. This will only find premises where the Occupier value is exactly “House of Cheese”.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This isn’t strictly true. CFRMIS queries don’t take into account capitalisation, so this search term could also return “house of cheese”, or “hOuSe OF cHeESe” for that matter.</p>
 </div>
 <p>If we want to expand our search term to find Premises with an Occupier containing House of Cheese we would instead type the following:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="n">House</span> <span class="n">of</span> <span class="n">Cheese</span><span class="o">%</span>
