@@ -128,6 +128,44 @@
 <p class="admonition-title">Todo</p>
 <p>Placeholder.</p>
 </div>
+<p>When <a class="reference internal" href="../../tutorials/create-premises.html"><span class="doc">Creating a Premises Record</span></a> the gazetteer should be used in order to ensure that we are able to capture as much precise location information about the premises as possible, and support further audit activity.</p>
+<p>The gazetteer will search through its own records for the information that has been entered in any of the following fields of the New Other Building or New Domestic Premises forms:</p>
+<ul class="simple">
+<li><p>Occupier</p></li>
+<li><p>Property Name</p></li>
+<li><p>Property No.</p></li>
+<li><p>Address Line 1</p></li>
+<li><p>Address Line 2</p></li>
+<li><p>Locality</p></li>
+<li><p>Towh</p></li>
+<li><p>Postcode</p></li>
+<li><p>Easting</p></li>
+<li><p>Northing</p></li>
+<li><p>OSAPR (in the future this may be TOID)</p></li>
+</ul>
+<p>Because the way in which the gazetteer records information may not always be completely intuitive it is generally best to search using only one of these fields, of which Postcode tends to be the most accessible while still sufficiently specific.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The gazetteer records <em>all</em> post codes as 7 character strings, which means that where you have a post code of the format XX00 0XX, like NN14 1UE, it should be typed into the Postcode field as NN141UE, without the space. As this is not how we record post codes throughout the rest of CFRMIS it is important that you remember to change it back to NN14 1UE after you have copied information over from the database.</p>
+</div>
+<p>Enter the postcode for the premises that you want to create a record for and click <img alt="gaze" src="../../_images/user-interface_icons_gazetteer.png" /> Gazetteer. The Gazetteer window will appear with a table of all properties matching your search criteria, in this case the postcode. Click to select the appropriate address for the premises you want the details for. Once you have clicked on a row of the table a map will appear in the pane to the right of the window. Use this to confirm that you have the right building.</p>
+<figure class="align-center" id="id2">
+<img alt="../../_images/records_premises_gazetteer_gazetteer.png" src="../../_images/records_premises_gazetteer_gazetteer.png" />
+<figcaption>
+<p><span class="caption-text">The gazetteer will display a map of the area highlighting the location of the property on the selected row of the search results.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the premises you are creating does not appear in the gazetteer table, perhaps because it is a new building, select the nearest available address for now and correct the address information after it has been copied into the form. Later you will need to <a class="reference internal" href="../../tutorials/edit-map.html"><span class="doc">Using Edit Map</span></a> in order to ensure that the location information on the premises record is as accurate as possible.</p>
+</div>
+<p>At the bottom of this window are two tickboxes, Copy Prop. Name and Copy Occupier. One or both of these will be available for selection. Tick all boxes which are available and then click OK in the bottom right of the window. This will copy the premises information from the gazetteer into the new premises form.</p>
+<figure class="align-center" id="id3">
+<img alt="../../_images/records_premises_gazetteer_imported.png" src="../../_images/records_premises_gazetteer_imported.png" />
+<figcaption>
+<p><span class="caption-text">The new premises form now contains the address information which has been copied from the gazetteer, including the Easting and Northing information and the OSAPR. Remember to add the space back into the postcode if you had to remove it earlier.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
 </section>
 
 
