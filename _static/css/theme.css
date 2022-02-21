@@ -3942,7 +3942,7 @@ a .wy-menu-vertical li span.toctree-expand {
   padding: 12px;
   line-height: 24px;
   margin-bottom: 24px;
-  background: #e7f2fa
+  background: #E2E5E7
 }
 
 .rst-content .admonition-title,
@@ -3950,7 +3950,7 @@ a .wy-menu-vertical li span.toctree-expand {
   font-weight: 700;
   display: block;
   color: #fff;
-  background: #6ab0de;
+  background: #6D8A96;
   padding: 6px 12px;
   margin: -12px -12px 12px
 }
@@ -4014,7 +4014,7 @@ a .wy-menu-vertical li span.toctree-expand {
 .rst-content .wy-alert-warning.seealso,
 .rst-content .wy-alert-warning.tip,
 .wy-alert.wy-alert-warning {
-  background: #ffedcc
+  background: #E7EED4
 }
 
 .rst-content .admonition-todo .admonition-title,
@@ -4044,7 +4044,7 @@ a .wy-menu-vertical li span.toctree-expand {
 .rst-content .wy-alert.wy-alert-warning .admonition-title,
 .wy-alert.wy-alert-warning .rst-content .admonition-title,
 .wy-alert.wy-alert-warning .wy-alert-title {
-  background: #f0b37e
+  background: #98CE00
 }
 
 .rst-content .note,
@@ -4060,7 +4060,7 @@ a .wy-menu-vertical li span.toctree-expand {
 .rst-content .wy-alert-info.tip,
 .rst-content .wy-alert-info.warning,
 .wy-alert.wy-alert-info {
-  background: #e7f2fa
+  background: #EAECED
 }
 
 .rst-content .note .admonition-title,
@@ -4090,7 +4090,7 @@ a .wy-menu-vertical li span.toctree-expand {
 .rst-content .wy-alert.wy-alert-info .admonition-title,
 .wy-alert.wy-alert-info .rst-content .admonition-title,
 .wy-alert.wy-alert-info .wy-alert-title {
-  background: #6ab0de
+  background: #6D8A96
 }
 
 .rst-content .hint,
