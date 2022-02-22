@@ -79,6 +79,9 @@
 <li class="toctree-l2 current"><a class="current reference internal" href="#">How CFRMIS Queries Work</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#operators">Operators</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#examples">Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#form-queries">Form Queries</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#search-terms">Search Terms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#results">Results</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="gen-search.html">General Search</a></li>
@@ -198,6 +201,39 @@
 </pre></div>
 </div>
 <p>will return any records where this value is empty.</p>
+</section>
+<section id="form-queries">
+<h2>Form Queries<a class="headerlink" href="#form-queries" title="Permalink to this headline"></a></h2>
+<p>For every type of <a class="reference internal" href="../records/index.html"><span class="doc">record</span></a> in CFRMIS there is a form used to interact with the information in those records. One of these interactions is querying the database to find records that match one or more criteria.</p>
+<figure class="align-default" id="id2">
+<img alt="../_images/queries_premises_other_qob.png" src="../_images/queries_premises_other_qob.png" />
+<figcaption>
+<p><span class="caption-text">The Query Other Building form. This form is used to search the database for Premises Records which are not Domestic Premises.</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>You can make a query using any of the information which is recorded as part of a record. Every empty field that you see in the Query form can be used as part of your query. If you put some information into a field CFRMIS will return every record which matches what you put into that field.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The information that you put into a field is a <em>term</em> - a Premises Record will only appear in the results of a query if the information that it has in the respective field matches the term that you have entered.</p>
+</div>
+<p>This also works with no terms at all.</p>
+<p>Press <img alt="other" src="../_images/user-interface_topbar_icons_other.png" /> <strong>Other Buildings</strong> to open a Query Other Building form.</p>
+<p>Press <img alt="search" src="../_images/user-interface_icons_search.png" /> <strong>Search</strong>. A results pane will open at the bottom of the screen displaying every single Premises Record which is <em>not</em> a <a class="reference internal" href="../glossary/index.html#term-Domestic-Premises"><span class="xref std std-term">domestic premises</span></a>.</p>
+<figure class="align-default" id="id3">
+<img alt="../_images/queries_premises_other_allprems.png" src="../_images/queries_premises_other_allprems.png" />
+<figcaption>
+<p><span class="caption-text">The results pane showing all Other Buildings.</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</figcaption>
+</figure>
+<p>We’ll look at the results pane in a little more detail soon, but for now just look at the bottom-right-hand corner of the pane. This search has given us over 20 000 results. This list has its uses but for most activites we need to trim it down to be a little more specific.</p>
+</section>
+<section id="search-terms">
+<h2>Search Terms<a class="headerlink" href="#search-terms" title="Permalink to this headline"></a></h2>
+<p>We can use any one of these fields to help us trim down our results and which approach you use will depend on the type of search you need to carry out. Specific advice for some of these is offered in the following pages.</p>
+</section>
+<section id="results">
+<h2>Results<a class="headerlink" href="#results" title="Permalink to this headline"></a></h2>
+<p>Let’s look a little more closely at this results pane.</p>
 </section>
 </section>
 
